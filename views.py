@@ -104,6 +104,9 @@ class SpecialPageHandler(webapp2.RequestHandler):
         elif path == u'index':
             resource = TitleIndexResource(self.request, self.response)
             resource.get(head)
+        elif path == u'home':
+            resource = NewHomeResource(self.request, self.response)
+            resource.get(head)
         elif path == u'posts':
             resource = PostListResource(self.request, self.response)
             resource.get(head)

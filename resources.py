@@ -474,6 +474,9 @@ class TitleIndexResource(Resource):
         content = render_atom(self.req, 'Title index', 'sp.index', pages)
         return Representation(content, 'text/xml; charset=utf-8')
 
+class NewHomeResource(Resource):
+    def represent_html_default(self, pages):
+        return TemplateRepresentation({}, self.req, 'sp_home.html')
 
 class PostListResource(Resource):
     def load(self):

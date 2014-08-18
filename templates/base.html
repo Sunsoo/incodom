@@ -21,6 +21,7 @@
     {% for css in config.service.css_list %}
     <link rel="stylesheet" href="{{ css }}?ver={{ app.version }}">
     {% endfor %}
+    <link rel="stylesheet" href="/statics/css/incodom.css">
 
     <!-- Google Analytics 2013-07-28 { -->
     {% if is_local %}
@@ -96,15 +97,7 @@
 <![endif]-->
 {% block after_body_open %}{% endblock %}
 <div class="top-bar"><ul>
-    <li class="search">
-        <form method="get" action="/sp.search">
-            <label style="display: none" for="searchbox">Search</label>
-            <input type="hidden" name="redir" value="1">
-            <input type="text" id="searchbox" name="q" placeholder="Search">
-            <input type="submit">
-        </form>
-    </li>
-    <li>
+    <li class="util-menu">
         {% if user %}
         <span class="user-email">{{ user.email() }}</span>
         <a href="/sp.preferences" class="preferences">Preferences</a>
@@ -114,6 +107,23 @@
         <a href="{{ users.create_login_url(cur_url)|e }}">Login</a>
         {% endif %}
         <span class="cur-user" style="display: none">{{ user|userpage }}</span>
+    </li>
+    <li class="home">
+        <a class="logo" href="/"><img src="http://insilicogen.com/wikiattach/TempDownload/attachments/logo.png"></a>
+    </li>
+    <li class="main-menu">
+        <a href="/전체글목록">List</a><span class="separator">/</span>
+        <a href="/제안">Suggest</a><span class="separator">/</span>
+        <a href="/Q&A">Q&A</a><span class="separator">/</span>
+        <a href="/sp.changes">Changes</a>
+    </li>
+    <li class="search">
+        <form method="get" action="/sp.search">
+            <label style="display: none" for="searchbox">Search</label>
+            <input type="hidden" name="redir" value="1">
+            <input type="text" id="searchbox" name="q" placeholder="Search">
+            <input type="submit" value="">
+        </form>
     </li>
 </ul></div>
 
@@ -133,6 +143,12 @@
     <div><a name="skip"></a></div>
 
     {% block body %}{% endblock %}
+
+    <div class="footer">
+        <p class="footer-text">人CoDOM의 모든 저작물은 크리에이티브 커먼즈 저작자표시-동일조건변경허락<br>국제 라이선스에 따라 이용할 수 있습니다.</p>
+        <p class="footer-copyright"><a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank"><img alt="크리에이티브 커먼즈 라이선스" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png"></a></p>
+    </div>
+
 </div>
 
 <script src="/statics/js/jquery.js?ver={{ app.version }}"></script>

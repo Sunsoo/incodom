@@ -1,0 +1,142 @@
+html, body {
+    color:#000000;
+}
+.top-bar {
+    padding:0;
+    height:135px;
+    box-shadow:none;
+    background:none;
+}
+.top-bar a,
+.top-bar a:hover,
+.footer a,
+.footer a:hover {
+    color:#000000;
+    border-bottom:0;
+    padding:0;
+}
+.util-menu,
+.util-menu a,
+.util-menu a:hover {
+    font-size:11px;
+}
+.util-menu {
+    float:left;
+    width:100%;
+    height:20px;
+    margin-top:9px;
+    text-align:right;
+}
+.home {
+    float:left;
+    width:80px;
+    height:89px;
+}
+.main-menu {
+    float:left;
+    margin-top:31px;
+    margin-left:32px;
+    font-weight:bold;
+    font-size:13px;
+}
+.separator {
+    color:#505050;
+    margin-left:19px;
+    margin-right:12px;
+}
+.search {
+    float:right;
+    margin-top:28px;
+    width:215px;
+    height:26px;
+    border:2px solid #000000;
+    border-radius:1.5em;
+}
+#searchbox {
+    float:left;
+    border:0;
+    width:170px;
+    height:20px;
+    margin-left:10px;
+    margin-top:3px;
+    padding:0;
+    background:none;
+}
+.top-bar li.search input[type="submit"] {
+    display:block;
+    float:right;
+    width:20px;
+    height:20px;
+    padding:0;
+    border:0;
+    margin-top:3px;
+    margin-right:10px;
+    background:url("http://insilicogen.com/wikiattach/TempDownload/attachments/search.png") no-repeat top left;
+}
+.btn-primary {
+    background-color:#00b404;
+    border-color:#00b404;
+}
+.btn-primary:hover {
+    background-color:#008e03;
+    border-color:#008e03;
+}
+.footer {
+    margin-top:18px;
+    padding-top:18px;
+    border-top:1px solid #bababa;
+}
+.footer {
+    float:left;
+    width:100%;
+}
+.footer .footer-text,
+.footer .footer-copyright {
+    margin:0;
+    padding:0;
+}
+.footer .footer-text {
+    float:left;
+    width:525px;
+    text-align:right;
+    color:#191919;
+    font-size:0.9em;
+    line-height:1.3em;
+}
+.footer .footer-copyright {
+    float:right;
+}
+
+/* home */
+.home-menu,
+.home-menu:hover {
+    border-bottom:0;
+}
+.home-menu-wrapper {
+    float:left;
+    width:100%;
+    margin-top:30px;
+    margin-bottom:45px;
+}
+.home-menu {
+    float:left;
+    display:block;
+    margin-left:43px;
+    margin-top:16px;
+    margin-bottom:16px;
+    width:180px;
+    height:180px;
+    line-height:180px;
+    text-align:center;
+    border-radius:180px;
+    background:#5b5b5b;
+}
+.home-menu:hover {
+    background:#00b404;
+}
+.home-menu img {
+    vertical-align:middle;
+}
+.home-menu.no-margin-left {
+    margin-left:0;
+}
