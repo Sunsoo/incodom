@@ -12,14 +12,16 @@ VERSION = '0.0.1_20140628_0'
 DEFAULT_CONFIG = {
     'navigation': [
         {
-            'name': 'Home',
+            'name': '',
             'url': '/Home',
         },
+        '''
         {
             'name': 'Changes',
             'url': '/sp.changes',
             'shortcut': 'C',
         },
+        '''
     ],
     'admin': {
         'email': '',

@@ -8,12 +8,14 @@ html, body {
     background:none;
 }
 .top-bar a,
-.top-bar a:hover,
 .footer a,
 .footer a:hover {
     color:#000000;
     border-bottom:0;
     padding:0;
+}
+.top-bar a:hover {
+    color:#828282;
 }
 .util-menu,
 .util-menu a,
