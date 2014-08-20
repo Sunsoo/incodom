@@ -7,7 +7,7 @@ from representations import TemplateRepresentation
 from resources import RedirectResource, PageResource, RevisionResource, RevisionListResource,\
     RelatedPagesResource, WikiqueryResource, TitleListResource, SearchResultResource,\
     TitleIndexResource, PostListResource, ChangeListResource, UserPreferencesResource,\
-    SchemaResource
+    SchemaResource, NewHomeResource
 from ext import ViewExtention
 
 
@@ -20,7 +20,7 @@ class PageHandler(webapp2.RequestHandler):
             return
 
         if path == '':
-            resource = RedirectResource(self.request, self.response, '/Home')
+            resource = RedirectResource(self.request, self.response, '/sp.home')
         elif self.request.path.find(' ') != -1:
             resource = RedirectResource(self.request, self.response, '/%s' % WikiPage.title_to_path(path))
         elif self.request.GET.get('rev') == 'list':
