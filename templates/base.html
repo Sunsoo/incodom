@@ -2,7 +2,7 @@
 <html {% block html_class %}{% endblock %} lang="ko">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=2, user-scalable=yes" />
     <meta name="google-site-verification" content="2nXYOVpEsfVnEFzy20UjNUhgVd_-dzugvii0CTXx02Q" />
 
     <link rel="icon" href="/favicon.ico?ver={{ app.version }}" type="image/x-icon" />
@@ -98,6 +98,7 @@
 {% block after_body_open %}{% endblock %}
 <div class="top-bar"><ul>
     <li class="util-menu">
+        <a href="/Help" class="help"><img class="help-small-icon" src="http://insilicogen.com/wikiattach/TempDownload/attachments/help-small.png"> Help</a>
         {% if user %}
         <span class="user-email">{{ user.email() }}</span>
         <a href="/sp.preferences" class="preferences">Preferences</a>

@@ -1,3 +1,4 @@
 python C:\work\google\dev_appserver.py .
 
-C:\work\google>python appcfg.py --oauth2 update ../incodom/incodom
+C:\work\google>
+python appcfg.py --oauth2 update ../incodom/incodom

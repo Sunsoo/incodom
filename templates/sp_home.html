@@ -1,31 +1,130 @@
 {% extends "templates/base.html" %}
 
 {% block body %}
+
 <p>人CoDOM은 위키(Wiki)기반의 커뮤니티 형성을 통한 <strong>생물정보 분야의 집단 지성 창출</strong>을 목적으로 운영되는 지식 커뮤니티로 생물정보 지식의 관리와 공유를 통한 범국가적 네트워크 형성 및 공유와 협업 기반의 지식생산 문화 전파를 목표로 하고 있습니다.</p>
 
-<div class="home-menu-wrapper">
-    <a class="home-menu no-margin-left" href="/About">
-        <img src="http://insilicogen.com/wikiattach/TempDownload/attachments/about.png">
-    </a>
+<div id="home-rolling-wrapper">
 
-    <a class="home-menu" href="/List">
-        <img src="http://insilicogen.com/wikiattach/TempDownload/attachments/list.png">
-    </a>
+    <div id="page-1" class="home-menu-wrapper" style="left:0;">
+        <a class="home-menu no-margin-left" href="/About">
+            <img src="http://insilicogen.com/wikiattach/TempDownload/attachments/about.png">
+        </a>
 
-    <a class="home-menu" href="/Suggest">
-        <img src="http://insilicogen.com/wikiattach/TempDownload/attachments/suggest.png">
-    </a>
+        <a class="home-menu" href="/HotTopic">
+            <img src="http://insilicogen.com/wikiattach/TempDownload/attachments/hot-topic.png">
+        </a>
 
-    <a class="home-menu no-margin-left" href="/Policy">
-        <img src="http://insilicogen.com/wikiattach/TempDownload/attachments/policy.png">
-    </a>
+        <a class="home-menu" href="/Suggest">
+            <img src="http://insilicogen.com/wikiattach/TempDownload/attachments/suggest.png">
+        </a>
 
-    <a class="home-menu" href="/Q&A">
-        <img src="http://insilicogen.com/wikiattach/TempDownload/attachments/qna.png">
-    </a>
+        <a class="home-menu no-margin-left" href="/Policy">
+            <img src="http://insilicogen.com/wikiattach/TempDownload/attachments/policy.png">
+        </a>
 
-    <a class="home-menu" href="/sp.changes">
-        <img src="http://insilicogen.com/wikiattach/TempDownload/attachments/changes.png">
-    </a>
+        <a class="home-menu" href="/Help">
+            <img src="http://insilicogen.com/wikiattach/TempDownload/attachments/help.png">
+        </a>
+
+        <a class="home-menu" href="/sp.changes">
+            <img src="http://insilicogen.com/wikiattach/TempDownload/attachments/changes.png">
+        </a>
+    </div>
+
+    <div id="page-2" class="home-menu-wrapper">
+        <div class="">
+            <hr id="tag-word-1-02-line" class="tag-line">
+            <hr id="tag-word-1-03-line" class="tag-line">
+            <hr id="tag-word-1-04-line" class="tag-line">
+            <hr id="tag-word-1-05-line" class="tag-line">
+            <hr id="tag-word-1-06-line" class="tag-line">
+            <hr id="tag-word-1-07-line" class="tag-line">
+            <hr id="tag-word-1-08-line" class="tag-line">
+            <hr id="tag-word-1-09-line" class="tag-line">
+            <a id="tag-word-1-01" class="tag-word level-1" href="/sp.index"><span>Bioinformatics</span></a>
+            <a id="tag-word-1-02" class="tag-word level-3" href="/sp.index">Sofrware</a>
+            <a id="tag-word-1-03" class="tag-word level-3" href="/sp.index">Algorithm</a>
+            <a id="tag-word-1-04" class="tag-word level-3" href="/sp.index">Business</a>
+            <a id="tag-word-1-05" class="tag-word level-2" href="/sp.index">Biology</a>
+            <a id="tag-word-1-06" class="tag-word level-3" href="/sp.index">Database</a>
+            <a id="tag-word-1-07" class="tag-word level-3" href="/sp.index">Experiment</a>
+            <a id="tag-word-1-08" class="tag-word level-3" href="/sp.index">Statistics</a>
+            <a id="tag-word-1-09" class="tag-word level-2" href="/sp.index">Analysis</a>
+        </div>
+    </div>
+
+    <div id="page-3" class="home-menu-wrapper">
+        <hr id="tag-word-2-02-line" class="tag-line">
+        <hr id="tag-word-2-03-line" class="tag-line">
+        <hr id="tag-word-2-04-line" class="tag-line">
+        <hr id="tag-word-2-05-line" class="tag-line">
+        <hr id="tag-word-2-06-line" class="tag-line">
+        <hr id="tag-word-2-07-line" class="tag-line">
+        <hr id="tag-word-2-08-line" class="tag-line">
+        <hr id="tag-word-2-09-line" class="tag-line">
+        <a id="tag-word-2-01" class="tag-word level-1" href="/sp.index"><span>Data Science</span></a>
+        <a id="tag-word-2-02" class="tag-word level-3" href="/sp.index">Database</a>
+        <a id="tag-word-2-03" class="tag-word level-3" href="/sp.index">Algorithm</a>
+        <a id="tag-word-2-04" class="tag-word level-2" href="/sp.index">Big Data</a>
+        <a id="tag-word-2-05" class="tag-word level-3" href="/sp.index">Programming</a>
+        <a id="tag-word-2-06" class="tag-word level-4" href="/sp.index">etc</a>
+        <a id="tag-word-2-07" class="tag-word level-2" href="/sp.index">Computer<br>Science</a>
+        <a id="tag-word-2-08" class="tag-word level-3" href="/sp.index">Management</a>
+        <a id="tag-word-2-09" class="tag-word level-3" href="/sp.index">Statistics</a>
+    </div>
+
 </div>
+
+<div id="home-rolling-count">
+    <span id="btn-1" class="on">&nbsp;</span>
+    <span id="btn-2">&nbsp;</span>
+    <span id="btn-3">&nbsp;</span>
+</div>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function () {
+
+    timer();
+    function timer(){
+        var cnt = 0;
+        var page = $('#home-rolling-wrapper > div');
+        var btn = $('#home-rolling-count > span');
+        var indexSlide = setInterval(function() {
+
+            $('#home-rolling-count > span').removeClass('on');
+
+            var prevPage = page.eq(cnt);
+            prevPage.css('left','0').animate({left:'-100%'});
+            btn.eq(cnt+1).addClass('on');
+            
+            cnt++;
+            console.log(cnt);
+            if(cnt == page.size()){
+                cnt = 0;
+            }
+
+            var nextPage = page.eq(cnt);
+            nextPage.css('left','100%').animate({left:0});
+            btn.eq(cnt).addClass('on');
+         
+        }, 2500);
+
+        $('#home-rolling-count span').click(function() {
+            clearInterval(indexSlide);
+            btn.removeClass('on');
+            $(this).addClass('on');
+            var btnId = $(this).attr('id');
+            var pageId = btnId.replace('btn','page');
+            page.removeClass('on');
+            page.addClass('off');
+            $('#'+pageId).removeClass('off');
+            $('#'+pageId).addClass('on');
+        });
+    }
+
+});
+</script>
 {% endblock %}
