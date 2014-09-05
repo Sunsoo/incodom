@@ -20,8 +20,7 @@ var upload = (function($) {
             this._apiScopes = [
                 'https://www.googleapis.com/auth/drive.file',
                 'https://www.googleapis.com/auth/drive.readonly.metadata',
-                'https://www.googleapis.com/auth/userinfo.email',
-                'https://www.googleapis.com/auth/userinfo.profile'
+                'https://www.googleapis.com/auth/userinfo.email'
             ];
             this._folderId = null;
             if(this._listener) this._listener.onUploaderStateChanged(this._ready);
